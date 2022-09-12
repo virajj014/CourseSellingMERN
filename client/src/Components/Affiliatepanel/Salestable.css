@@ -1,0 +1,73 @@
+.sales-card-head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid orange;
+    margin: 5px 0px;
+    align-items: center;
+    font-weight: 700;
+    padding: 0px 10px;
+}
+
+.invoices-outer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    /* overflow-y: scroll; */
+}
+
+.sales {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+.sales td,
+.sales th {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.sales th {
+    background-color: orange;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    .sales thead {
+        display: none;
+    }
+
+    .sales,
+    .sales tbody,
+    .sales tr,
+    .sales td {
+        display: block;
+        width: 100%;
+    }
+
+    .sales tr {
+        margin-bottom: 15px;
+        border: 2px solid orange;
+    }
+
+    .sales td {
+        text-align: right;
+        /* padding-left: 50%; */
+        position: relative;
+    }
+
+    .sales td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        text-align: left;
+        padding-left: 10px;
+        font-weight: bold;
+    }
+}

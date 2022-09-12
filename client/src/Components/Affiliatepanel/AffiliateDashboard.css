@@ -1,0 +1,124 @@
+.aff-container1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0px;
+    /* background-color: #0099ff; */
+}
+
+.aff-dashboard-section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    /* margin-top: 5%; */
+    background-color: black;
+    border-top-left-radius: 300px;
+    height: 100%;
+}
+
+.userimage {
+    width: 305px;
+    height: 305px;
+    border-radius: 300px;
+    border: 2px solid white;
+}
+
+.aff-dashboard-section1 .userimage img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.aff-dashboard-section1 .affdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: orange; */
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    font-weight: 700;
+    /* margin: 10px; */
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.aff-dashboard-section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    /* margin-top: 5%; */
+}
+
+.aff-dashboard-section2 .aff-card {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+.aff-dashboard-section2 .aff-card h1 {
+    font-size: 23px;
+}
+
+.aff-dashboard-section2 .aff-card p {
+    font-size: 23px;
+}
+
+.aff-dashboard-section2 .c1 {
+    background: linear-gradient(to top right, #6600cc 23%, #0099ff 100%);
+    color: white;
+}
+
+.aff-dashboard-section2 .c2 {
+    background: linear-gradient(to top right, #ff5050 23%, #ff9933 100%);
+
+    color: white;
+}
+
+.aff-dashboard-section2 .c3 {
+    background: linear-gradient(to top right, #00ffff 23%, #66ff66 100%);
+}
+
+.aff-dashboard-section2 .c4 {
+    background: linear-gradient(to top right, #ff1d1d 23%, #ff1d8e 100%);
+    color: white;
+
+}
+
+.aff-container2 {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.aff-container2 h1 {
+    background-color: orange;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media (max-width:650px) {
+    .aff-container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 20px 0px;
+        /* background-color: #0099ff; */
+    }
+}

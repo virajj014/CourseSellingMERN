@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.searchbar {
+    display: flex;
+    width: 400px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.searchbar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.searchbar svg {
+    width: 20px;
+    color: orange;
+}

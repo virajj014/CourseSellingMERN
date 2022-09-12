@@ -1,0 +1,108 @@
+.footerouter {
+    position: absolute;
+    bottom: 0px;
+}
+
+.myfooter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.section-1 {
+    width: 300px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    /* background-color: white; */
+}
+
+
+.sub-section {
+    display: flex;
+}
+
+.footerimg {
+    width: 200px;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-2 div {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.section-2 h1,
+.section-3 h1 {
+    font-size: 20px;
+}
+
+
+.section-2 div a:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 930px) {
+    .sub-section {
+        flex-direction: column;
+        margin-top: 20px;
+
+    }
+
+    .section-3 {
+        margin-top: 20px
+    }
+
+    .section-1 {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: white; */
+    }
+
+}
+
+@media (max-width:600px) {
+    .section-2 {
+        flex-direction: column;
+    }
+
+    .section-2 div {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width:530px) {
+    .myfooter {
+        flex-direction: column;
+    }
+
+    .section-2 {
+        flex-direction: row;
+    }
+
+}
+
+
+@media (max-width:400px) {
+    /* .section-2 {
+        flex-direction: column;
+    }
+
+    .section-2 div {
+        margin-top: 20px;
+    } */
+
+    .section-2 div {
+        /* background-color: black; */
+        width: 120px;
+    }
+}

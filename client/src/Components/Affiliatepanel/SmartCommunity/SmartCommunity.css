@@ -1,0 +1,79 @@
+.affiliate-inner .sect1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.community-head {
+    display: flex;
+    justify-content: center;
+    color: orange;
+    padding: 20px;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.community-head h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.social-card-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* height: 100%; */
+    /* align-items: center; */
+}
+
+.social-card {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* text-align: center; */
+    border: 2px solid orange;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.social-details {
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.social-card img {
+    width: 50px;
+}
+
+.social-card h1 {
+    font-size: 18px;
+}
+
+.social-card button {
+    color: white;
+    background-color: orange;
+    padding: 5px;
+    font-size: 20px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+}
+
+.social-card button:hover {
+    background-color: black;
+
+}
+
+
+.social-card-row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}

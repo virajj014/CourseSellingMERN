@@ -1,0 +1,124 @@
+.productcard {
+    border: 1px solid white;
+    margin: 20px;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+    color: black;
+    /* box-shadow: 0px 0px 20px 10px rgb(255, 247, 222); */
+}
+
+
+
+.productcard-img {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.productcard img {
+    width: 100%;
+    max-height: 200px;
+}
+
+.productcard h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    height: 50px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-head {
+    min-height: 120px;
+    max-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aqua; */
+    padding: 5px 0px;
+}
+
+.productcard h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+.details {
+    height: 150px;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+
+
+.cop {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.cp {
+    font-size: 18px;
+}
+
+.cp span {
+    text-decoration: line-through;
+    padding-right: 10px;
+}
+
+.op {
+    font-size: 20px;
+    color: green;
+}
+
+.op span {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.productcard button {
+    color: orange;
+    background-color: white;
+    border: 1px solid orange;
+    display: block;
+    margin: auto;
+    padding: 5px;
+}
+
+.productcard button:hover {
+    background-color: orange;
+    color: white;
+    border: 1px solid orange;
+}
+
+.productcard .card-hr {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(255, 223, 164);
+}
+
+.description {
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+    font-size: 15px;
+}

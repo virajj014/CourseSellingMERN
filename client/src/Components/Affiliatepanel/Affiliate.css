@@ -1,0 +1,134 @@
+.affiliate-outer {
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+.affiliate-vr {
+    min-height: 100vh;
+    width: 3px;
+    background-color: rgb(233, 233, 233);
+}
+
+.affiliate-side {
+    width: 300px;
+    padding: 50px;
+}
+
+.affiliate-side h1 {
+    color: black;
+    font-size: 20px;
+}
+
+.affiliate-side p {
+    color: black;
+    font-weight: 600;
+}
+
+.affiliate-side h2 {
+    font-size: 20px;
+}
+
+.affiliate-sidebar-content {
+    margin-left: 30px;
+}
+
+.affiliate-sidebar-content .active {
+    color: orange;
+}
+
+.affiliate-side p:hover,
+.sidebar-inner:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.sidebar-inner {
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-inner svg {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.affiliate-inner {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.affiliate-hr {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(222, 222, 222);
+}
+
+.offer-card {
+    border: 5px solid grey;
+
+}
+
+.offer-card-img {
+    width: fit-content;
+}
+
+
+
+/* sidebar responsive */
+.affiliate-sidebar-outer {
+    /* display: none; */
+    display: flex;
+}
+
+.affiliate-sidebar-hamopen {
+    display: none;
+    background-color: orange;
+    position: absolute;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.affiliate-sidebar-hamopen svg {
+    color: white;
+
+}
+
+
+.affiliate-sidebar-hamclose {
+    display: none;
+    background-color: orange;
+    position: absolute;
+    right: 20px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.affiliate-sidebar-hamclose svg {
+    color: white;
+
+}
+
+@media (max-width: 980px) {
+    .affiliate-sidebar-outer {
+        display: none;
+        position: absolute;
+        background-color: white;
+        z-index: 6;
+    }
+
+    .affiliate-sidebar-hamopen {
+        display: flex;
+        z-index: 5;
+        left: 10px;
+    }
+
+    .affiliate-sidebar-hamclose {
+        display: flex;
+        z-index: 10;
+        /* left: 10px; */
+    }
+}

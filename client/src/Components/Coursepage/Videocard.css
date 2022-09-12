@@ -1,0 +1,120 @@
+.videocard {
+    display: flex;
+
+    box-shadow: 0px 0px 10px 1px rgb(167, 167, 167);
+    width: 700px;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    padding: 5px;
+    margin: 10px 0px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.videocard:hover {
+    background-color: rgb(252, 221, 164);
+}
+
+.videocard-active {
+    background-color: rgb(252, 195, 90);
+}
+
+.videocard p {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 50%;
+    font-size: 20px;
+    color: orange;
+    margin: 0px 10px;
+}
+
+.videocard div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 80%;
+    height: 100%;
+    margin: 0px 10px;
+    /* background-color: aqua; */
+}
+
+.videocard h1 {
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.videocard h2 {
+    font-size: 15px;
+    line-height: 16px;
+    color: gray
+}
+
+.videocard img {
+    height: 30px;
+    width: 50px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.videocard button {
+    color: grey;
+    width: 50px;
+    /* height: 50px; */
+    border: none;
+}
+
+.videocard button:hover {
+    background-color: inherit;
+    color: orange;
+    cursor: pointer;
+}
+
+
+/* responsiveness */
+@media (max-width:750px) {
+    .videocard {
+
+        max-width: 500px;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        padding: 5px;
+        margin: 10px 0px;
+        border-radius: 20px;
+    }
+
+}
+
+@media (max-width:550px) {
+    .videocard {
+
+        width: 100%;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        padding: 5px;
+        margin: 10px 0px;
+        border-radius: 20px;
+    }
+
+    .videocard p {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 0px;
+        background-color: inherit;
+        border: none;
+        border-radius: none;
+        font-size: 20px;
+        color: orange;
+        margin: 0px 5px;
+    }
+}

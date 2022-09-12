@@ -1,0 +1,118 @@
+.abtus-head {
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    top: -20px;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abtus-head h1 {
+    font-weight: 400;
+    font-size: 50px;
+    padding: 30px 0px;
+    color: #FFD51E;
+}
+
+.abtus-head p {
+    display: block;
+    margin: auto;
+    font-size: 25px;
+    width: 70%;
+    font-weight: 500;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+
+
+/* Our founders */
+.founders-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: rgb(255, 235, 108); */
+
+    padding: 70px 0px;
+}
+
+
+
+.founders-outer h1 {
+    padding: 20px 0px;
+    color: rgb(58, 58, 58);
+    font-size: 60px;
+}
+
+
+.founders-outer div {
+    display: flex;
+    justify-content: center;
+    /* width: 70%; */
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.founders-outer div .card {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px rgb(115, 115, 115);
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.founders-outer div .card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 300px;
+    margin: 0px;
+}
+
+
+.founders-outer div .card h2 {
+    font-size: 30px;
+}
+
+.founders-outer div .card h3 {
+    font-size: 21px;
+    color: orange;
+}
+
+
+@media (max-width: 800px) {
+    .abtus-head {
+        top: -5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .abtus-head p {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .img-2a {
+        width: 20px;
+        margin: 0px 10px;
+        position: relative;
+        top: -15px;
+    }
+
+    .img-2b {
+        width: 20px;
+        margin: 0px 5px;
+        position: relative;
+        top: -10px;
+    }
+
+
+
+}

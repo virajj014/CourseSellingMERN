@@ -1,0 +1,200 @@
+.outer-enrollnow-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    /* background: linear-gradient(to top left, #ff6600 0%, #ffff66 100%); */
+}
+
+
+.enrollnow-container {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(195, 195, 195);
+}
+
+.enrollnow-left {
+    background-color: #ff4444;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.enrollnow-left img {
+    width: 350px;
+    height: fit-content;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.enrollnow-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 0px;
+    padding: 0px 20px;
+    padding-top: 10px;
+
+}
+
+.enrollnow-right h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+
+.enrollnow-right label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.enrollnow-right input {
+    border: none;
+    box-shadow: 0px 0px 10px rgb(195, 195, 195);
+    font-size: 15px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.enrollnow-right input:focus {
+    /* background-color: #ffe6c8; */
+    color: rgb(162, 162, 162);
+    outline: none;
+    z-index: +5;
+    box-shadow: 0px 0px 10px rgb(158, 158, 158);
+
+}
+
+.sub-form {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #66ffa1; */
+    width: 100%;
+}
+
+.sub-form input {
+    width: 90%;
+    font-size: 15px;
+}
+
+select {
+    box-shadow: 0px 0px 10px rgb(195, 195, 195);
+    border: none;
+    font-size: 15px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.referral-div {
+    height: 40px;
+}
+
+.referral-div input {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.enrollnow-right button {
+    height: 100%;
+    background-color: rgb(255, 62, 62);
+    border: 1px solid white;
+    position: relative;
+    top: -1.5px;
+    padding: 10px 10px;
+    width: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.enrollnow-right button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.light-grey-hr {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-top: 1px solid rgb(104, 104, 104);
+}
+
+.enrollnow-right p {
+    font-size: 13px;
+}
+
+.enrollnow-right p a {
+    color: red;
+}
+
+.enrollnow-right p a:hover {
+    cursor: pointer;
+    color: rgb(46, 46, 46);
+    text-decoration: underline;
+}
+
+.enrollnow-right select:focus {
+    outline: none;
+}
+
+@media (max-width: 1010px) {
+    .enrollnow-left {
+        display: none;
+    }
+
+    .enrollnow-container {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 700px) {
+    .enrollnow-right {
+        width: 500px;
+    }
+}
+
+@media (max-width: 560px) {
+
+
+    .enrollnow-right {
+        width: 400px;
+    }
+}
+
+@media (max-width: 460px) {
+    .enrollnow-right {
+        width: 300px;
+        height: max-content;
+    }
+
+    .enrollnow-right input {
+        font-size: 12px;
+    }
+
+    .enrollnow-right select {
+        font-size: 12px;
+    }
+
+    .sub-form {
+        flex-direction: column;
+    }
+
+    .sub-form input {
+        width: 100%;
+    }
+}

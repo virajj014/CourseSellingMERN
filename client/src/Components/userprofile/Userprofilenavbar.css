@@ -1,0 +1,143 @@
+.nav-outermost {
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+    border-right: 1px solid rgb(234, 234, 234);
+}
+
+.nav-outer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    width: 250px;
+    height: 100vh;
+
+    /* background-color: rgb(247, 247, 247); */
+}
+
+.nav-outer h1 {
+    color: rgb(37, 37, 37);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-outer p {
+    color: rgb(37, 37, 37);
+    font-weight: 600;
+    width: fit-content;
+    /* background-color: aqua; */
+    font-size: 16px;
+    padding: 5px;
+}
+
+.nav-outer p:hover {
+    background-color: rgb(255, 204, 0);
+    border-radius: 10px;
+
+    transition: all 1s;
+    color: rgb(255, 255, 255);
+}
+
+.nav-toggler-user {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(225, 225, 225);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 10px;
+    border-radius: 40px;
+    display: none;
+}
+
+.nav-toggler-user:focus {
+    /* outline: none; */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.nav-toggler-user span {
+    height: 3px;
+    width: 10px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    position: relative;
+    transition: all 0.3s ease;
+    left: 4px;
+}
+
+.nav-toggler-user span::before,
+.nav-toggler-user span::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.nav-toggler-user span::before {
+    transform: translate(-6px, 6px);
+}
+
+.nav-toggler-user span::after {
+    transform: translate(-6px, -6px);
+}
+
+.nav-toggler-user.active span {
+    background-color: white;
+}
+
+.nav-toggler-user.active span::before {
+    /* transform: translate(6px, 10px); */
+    transform: rotate(45deg);
+    top: 1px;
+    left: -2px;
+}
+
+.nav-toggler-user.active span::after {
+    /* transform: translate(10px, 60px); */
+    transform: rotate(135deg);
+    top: 1px;
+    left: -2px;
+}
+
+
+.nav-outer.open1 {
+    display: flex;
+}
+
+.nav-outermost.open1 {
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    top: 0px;
+}
+
+
+.userimg-sidenav {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    border: 5px solid rgb(255, 204, 0);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.userimg-sidenav img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@media (max-width: 700px) {
+    .nav-outer {
+        display: none;
+    }
+
+    .nav-toggler-user {
+        display: block;
+        position: fixed;
+    }
+}

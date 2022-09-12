@@ -1,0 +1,142 @@
+.contact-outer {
+    width: 100%;
+    /* position: absolute; */
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+.contact-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.contact-innermost {
+    display: flex;
+    flex-direction: row;
+    /* padding: 30px; */
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    /* width: 500px; */
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-inner form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-inner form input,
+.contact-inner form textarea {
+    background-color: rgb(221, 186, 255);
+    color: gray;
+    font-size: 15px;
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    font-weight: 700;
+}
+
+.contact-inner form textarea {
+    min-height: 150px;
+}
+
+.contact-inner form button {
+    width: 100px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+
+.contact-inner form p {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    color: blueviolet;
+    width: 100%;
+    margin: 0px;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.contact-inner p {
+    font-size: 50px;
+    margin: 0px;
+    color: white;
+    font-weight: 600;
+}
+
+
+@media (max-width: 1150px) {
+    .contact-inner {
+        justify-content: flex-start;
+        /* margin: 50px; */
+    }
+
+    .contact-innermost {
+        flex-direction: column;
+        height: max-content;
+        /* margin: ; */
+    }
+
+    .contact-outer {
+        background-color: rgb(0, 252, 147);
+        padding: 20px;
+        height: 100%;
+    }
+
+    .contact-inner form input,
+    .contact-inner form textarea {
+        background-color: rgb(174, 237, 211);
+        width: 90%;
+    }
+
+    .contact-inner form button {
+        background-color: rgb(0, 252, 147);
+    }
+
+    .contact-inner form p {
+        color: rgb(0, 252, 147);
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-inner form {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .contact-inner img {
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:850px) {
+    .contact-inner p {
+        font-size: 40px;
+    }
+
+    .contact-innermost {
+        width: 100%;
+    }
+
+    .contact-innermost form p {
+        display: none;
+    }
+
+    .contact-innermost img {
+        width: 100%;
+    }
+}
